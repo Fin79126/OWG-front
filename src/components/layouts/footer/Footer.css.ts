@@ -8,13 +8,15 @@ export const footerStyle = style({
   width: "100%",
   height: "2.5rem",
   // Ensure footer is at the bottom of the page or content
-  position: "relative",
+  justifySelf: "anchor-center",
+  position: "absolute",
   marginTop: "auto",
 });
 
 export const footerFixedStyle = style([
   footerStyle,
   {
+    justifySelf: "anchor-center",
     position: "fixed",
     bottom: 0,
   },

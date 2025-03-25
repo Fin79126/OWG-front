@@ -3,9 +3,9 @@ import { style, globalStyle } from "@vanilla-extract/css";
 export const bodyStyle = style({
   margin: 0,
   padding: 0,
-  background: "linear-gradient(to right, #d9e7ff, #ffffff)",
+  fontFamily: "'Comic Sans MS', cursive, sans-serif", // Playful font
+  backgroundColor: "#ffcc00", // Bright yellow background
   color: "#333",
-  //   fontFamily: "'Inter' , sans-serif",
 });
 
 globalStyle("body", {
