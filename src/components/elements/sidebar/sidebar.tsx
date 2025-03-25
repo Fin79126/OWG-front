@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import * as styles from './sidebar.css';
+import * as styles from './style.css';
 
 // ...existing code...
 
@@ -20,11 +20,11 @@ const Sidebar = () => {
         {/* ...existing sidebar content... */}
         {isVisible && (
           <div className={styles.sidebarContent}>
-            <p>Sidebar is now visible</p>
-            <ul>
-              <li>Home</li>
-              <li>About</li>
-              <li>Contact</li>
+            <p className={styles.sidebarContentP}>サイドバー</p>
+            <ul className={styles.sidebarContentUl}>
+              <li className={styles.sidebarContentLi}>About</li>
+              <li className={styles.sidebarContentLi}>ワードウルフ</li>
+              <li className={styles.sidebarContentLi}>ゲーム</li>
             </ul>
           </div>
         )}

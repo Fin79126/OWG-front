@@ -3,7 +3,6 @@ import { style } from "@vanilla-extract/css";
 export const host = style({
   display: "block",
   padding: "16px",
-  backgroundColor: "#f9f9f9",
 });
 
 export const heading = style({

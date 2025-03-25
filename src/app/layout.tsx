@@ -3,7 +3,7 @@ import React, { ReactNode } from 'react';
 import Header from '@/components/layouts/header/Header';
 import Footer from '@/components/layouts/footer/Footer';
 import Sidebar from '@/components/elements/sidebar/sidebar';
-import { bodyStyle } from '@/styles/app.css';
+import '@/styles/app.css';
 import { notoSansJp } from "@/styles/fonts";
 
 interface LayoutProps {
@@ -12,7 +12,7 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => (
   <html>
-    <body className={`${notoSansJp.className} ${bodyStyle}`}>
+    <body className={notoSansJp.className}>
       <div>
           <Header />
           <Sidebar />

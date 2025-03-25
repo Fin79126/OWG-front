@@ -1,17 +1,23 @@
 import { style, globalStyle } from "@vanilla-extract/css";
 
-export const bodyStyle = style({
-  margin: 0,
-  padding: 0,
-  background: "linear-gradient(to right, #d9e7ff, #ffffff)",
-  color: "#333",
+export const mainStyle = style({
+  display: "flex",
+  backgroundColor: "#fff",
+  flexDirection: "column",
+  alignItems: "center",
+  justifyContent: "center",
+  minHeight: "100vh",
+  padding: "0 1rem",
+  margin: "0 1rem",
+  fontSize: "1.2rem",
   //   fontFamily: "'Inter' , sans-serif",
 });
 
 globalStyle("body", {
-  fontFamily: "'Comic Sans MS', cursive, sans-serif", // Playful font
   lineHeight: "1.6",
-  backgroundColor: "#ffcc00", // Bright yellow background
+  margin: 0,
+  padding: 0,
+  background: "linear-gradient(to bottom,rgb(241, 202, 43), #ffffff)",
   color: "#333",
 });
 
