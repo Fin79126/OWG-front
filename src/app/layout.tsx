@@ -2,8 +2,7 @@
 import React, { ReactNode } from 'react';
 import Header from '@/components/layouts/header/Header';
 import Footer from '@/components/layouts/footer/Footer';
-import Sidebar from '@/components/elements/sidebar/sidebar';
-import '@/styles/app.css';
+import { coverStyle , mainStyle , displayStyle } from '@/styles/app.css';
 import { notoSansJp } from "@/styles/fonts";
 
 interface LayoutProps {
@@ -11,14 +10,17 @@ interface LayoutProps {
 }
 
 const Layout: React.FC<LayoutProps> = ({ children }) => (
-  <html>
+  <html lang="ja">
     <body className={notoSansJp.className}>
-      <div>
+      <div className={displayStyle}>
           <Header />
-          <Sidebar />
-          {/* Main content */}
-          {children}
-          <Footer />
+          <main className={mainStyle}>
+              <a className={coverStyle}>
+              {children}
+              </a>
+            <Footer />
+          </main>
+          
       </div>
     </body>
   </html>

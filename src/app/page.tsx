@@ -1,5 +1,5 @@
 import { host } from './style.css'
-import { mainStyle } from '@/styles/app.css'
+// import { mainStyle } from '@/styles/app.css'
 import { Button } from '@/components/elements/button/gameSelect/gameSelectButton'
 import { ButtonProps } from '@/types/types'
 
@@ -10,19 +10,19 @@ const wordwolfButtonProps: ButtonProps = {
 };
 const speedButtonProps: ButtonProps = {
   text: "スピード",
-  iconSrc: undefined,
+  iconSrc: "/images/speedIcon.png",
   url: "/speed",
 };
 
 export default function Home() {
   return (
-    <main className={mainStyle}>
+    <>
       <div className={host}>ねこ、こねこ</div>
       <Button {...wordwolfButtonProps} />
       <Button {...speedButtonProps} />
       <h1>Home</h1>
       <h1>Home</h1>
       <h1>Home</h1>      
-    </main>
+    </>
   )
 }

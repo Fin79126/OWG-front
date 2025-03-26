@@ -13,7 +13,7 @@ export const Button: FC<ButtonProps> = ({ text, iconSrc, url}) => {
       <div className={topHalf} />
       <div className={bottomHalf} />
       <div className={iconContainer}>
-        {iconSrc && <Image src={iconSrc} alt="icon" width={100} height={100} />}
+        {iconSrc && <Image src={iconSrc} alt="icon" width={160} height={120} />}
       </div>
       <span className={textspan}>{text}</span>
     </button>

@@ -9,18 +9,17 @@ export const footerStyle = style({
   height: "2.5rem",
   // Ensure footer is at the bottom of the page or content
   justifySelf: "anchor-center",
-  position: "absolute",
-  marginTop: "auto",
+  flexShrink: 0,
 });
 
-export const footerFixedStyle = style([
-  footerStyle,
-  {
-    justifySelf: "anchor-center",
-    position: "fixed",
-    bottom: 0,
-  },
-]);
+// export const footerFixedStyle = style([
+//   footerStyle,
+//   {
+//     justifySelf: "anchor-center",
+//     position: "fixed",
+//     bottom: 0,
+//   },
+// ]);
 
 export const textStyle = style({
   fontSize: "1rem",

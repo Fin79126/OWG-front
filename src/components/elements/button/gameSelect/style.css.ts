@@ -56,8 +56,8 @@ export const iconContainer = style({
   top: "10px",
   left: "50%",
   transform: "translateX(-50%)",
-  width: "100px",
-  height: "100px",
+  width: "160px",
+  height: "120px",
   transition: "transform 0.3s ease-in-out",
   zIndex: 1, // イメージをボタンの上半分の下に配置
 

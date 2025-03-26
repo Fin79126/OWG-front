@@ -8,7 +8,7 @@ export const sidebar = style({
   width: "8rem", // 250px
   transform: "translateX(-100%)",
   transition: "transform 0.3s ease-in-out",
-  zIndex: "2",
+  zIndex: 1001,
   backgroundColor: "#ffcc00", // Bright yellow background
   color: "#333",
   padding: "1.25rem", // 20px
@@ -27,7 +27,7 @@ export const headerButton = style({
   position: "fixed",
   top: "0.625rem", // 10px
   left: "0.625rem", // 10px
-  zIndex: "3",
+  zIndex: 1002,
   backgroundColor: "#333", // Bright orange background
   color: "#fff",
   border: "none",
@@ -49,7 +49,7 @@ export const overlay = style({
   width: "100%",
   height: "100%",
   backgroundColor: "rgba(0, 0, 0, 0.5)",
-  zIndex: "1",
+  zIndex: 999,
   display: "none",
   // ...existing styles...
 });

@@ -5,8 +5,8 @@ export const headerStyle = style({
   color: "#fff",
   padding: "0.01rem 0",
   textAlign: "center",
-  position: "fixed",
-  top: 0,
+  flexShrink: 0,
+  zIndex: 1000,
   width: "100%",
 });
 
