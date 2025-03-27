@@ -28,7 +28,7 @@ export const mainStyle = style({
   display: "flex",
   flexDirection: "column",
   lineHeight: "1.6",
-  background: "linear-gradient(to bottom,rgb(241, 202, 43), #ffffff)",
+  // background: "linear-gradient(to bottom,rgb(241, 202, 43), #ffffff)",
   color: "#333",
   selectors: {
     "&::-webkit-scrollbar": {

@@ -1,10 +1,16 @@
 "use client";
-import React from 'react';
+import React, {use, useEffect} from 'react';
+import { useColor } from '@/hooks/useColor'; // カラーホックのインポート
 import { Button } from '@/components/elements/button/default/defaultButton'; // ボタンコンポーネントのインポート
 // import { mainStyle } from '@/styles/app.css';
 import { container, buttonContainer, heading } from './style.css'; // スタイルインポート
 
 const Page: React.FC = () => {
+  const { setColor } = useColor();
+
+  useEffect(() => {
+    setColor("rgb(67 0 0)");
+  },[]);
 
   return (
     <>
