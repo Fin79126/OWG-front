@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import * as styles from './style.css';
+import React, { useState } from "react";
+import * as styles from "./style.css";
 
 // ...existing code...
 
@@ -15,8 +15,13 @@ const Sidebar = () => {
       <button onClick={toggleSidebar} className={styles.headerButton}>
         &#9776;
       </button>
-      <div className={`${styles.overlay} ${isVisible ? styles.overlayVisible : ''}`} onClick={toggleSidebar}></div>
-      <div className={`${styles.sidebar} ${isVisible ? styles.sidebarVisible : ''}`}>
+      <div
+        className={`${styles.overlay} ${isVisible ? styles.overlayVisible : ""}`}
+        onClick={toggleSidebar}
+      ></div>
+      <div
+        className={`${styles.sidebar} ${isVisible ? styles.sidebarVisible : ""}`}
+      >
         {/* ...existing sidebar content... */}
         {isVisible && (
           <div className={styles.sidebarContent}>

@@ -1,13 +1,13 @@
-'use client'
+"use client";
 
-import React from 'react';
-import Sidebar from '@/components/elements/sidebar/sidebar';
-import { headerStyle, titleStyle } from './Header.css';
-import Link from 'next/link';
+import React from "react";
+import Sidebar from "@/components/elements/sidebar/sidebar";
+import { headerStyle, titleStyle } from "./Header.css";
+import Link from "next/link";
 
 const Header: React.FC = () => {
   return (
-    <header className={headerStyle} style={{ position: 'sticky', top: 0 }}>
+    <header className={headerStyle} style={{ position: "sticky", top: 0 }}>
       <Sidebar />
       <Link href="/">
         <h1 className={titleStyle}>OWG</h1>
@@ -17,4 +17,3 @@ const Header: React.FC = () => {
 };
 
 export default Header;
-

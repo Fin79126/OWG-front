@@ -1,7 +1,7 @@
-'use client'
+"use client";
 
-import React from 'react';
-import { footerStyle, textStyle } from './Footer.css';
+import React from "react";
+import { footerStyle, textStyle } from "./Footer.css";
 
 const Footer: React.FC = () => {
   // const [isFixed, setIsFixed] = React.useState(true);

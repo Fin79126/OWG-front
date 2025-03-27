@@ -1,7 +1,7 @@
 "use client";
-import React from 'react';
-import { button } from './style.css'; // スタイルをインポート
-import { on } from 'events';
+import React from "react";
+import { button } from "./style.css"; // スタイルをインポート
+import { on } from "events";
 
 interface ButtonProps {
   label: string;
